@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>日本本州蛇同定検定</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>    
+    <body>
+        <h1>
+            日本本州に生息するヘビの同定練習
+        </h1>
+        <h2>
+            ヘビ一覧
+        </h2>
+            <table border="2">
+                <tr>
+                    <th>和名</th>
+                    <th>情報</th>
+                </tr>
+                <tr>
+                    <th>アオダイショウ</th>
+                    <th><a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AA%E3%83%80%E3%82%A4%E3%82%B7%E3%83%A7%E3%82%A6">wikipedia</a></th>
+                </tr>
+                <tr>
+                    <th>シマヘビ</th>
+                    <th><a href="https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%9E%E3%83%98%E3%83%93">wikipedia</a></a></th>
+                </tr>
+
+            </table>
+            <h3>                                                            </h3>
+            <a href="{{ url_for('form') }}">問題演習ページへ</a>
+            <a href="{{ url_for('add') }}">問題追加編集ページへ</a>
+    </body>
+</html>

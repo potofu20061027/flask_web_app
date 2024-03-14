@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <title>日本本州蛇同定検定問題追加編集ページ</title>
+            <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        </head>
+        <body>
+            <h1>google formで作成した演習問題を送信します</h1>
+            <br>
+            <form method="post" action="{{ url_for('register')}}">                                                                 
+                <table border="1">
+                    <tr>
+                        <th>クイズの内容</th>
+                        <th>google formのURL</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="content"></td>
+                        <td><input type="text" name="URL"></td>
+                    </tr>
+                 </table> 
+                 <br>
+                 <input type="submit" value="送信">
+            </form>
+            <br>
+            <a href="{{ url_for('home') }}">ホーム画面へ</a>
+        </body>
+    </html>

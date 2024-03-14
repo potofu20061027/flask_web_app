@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <title>日本本州蛇同定検定</title>
+            <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        </head>
+        <body> 
+             <h2>問題一覧</h2>
+             <table border="1">
+                <tr>
+                    <th>クイズの内容</th>
+                    <th>google formのURL</th>
+                </tr>
+                {% for quiz in quizs %}
+                    <tr>
+                        <td>{{quiz.content}}</td>
+                        <td><a href="{{quiz.URL}}">{{quiz.URL}}</a></td>
+                    </tr>
+                {% endfor %}
+             </table> 
+
+
+
+
+
+
+            <h2>                                                                                                                                           
+
+            </h2>
+            <a href="{{ url_for('home') }}">ホーム画面へ</a>
+            <a href="{{ url_for('add') }}">問題追加編集ページへ</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <a href="{{ url_for('delete') }}">問題削除ページ(サイト編集者用)</a>
+        </body>
+    </html>
